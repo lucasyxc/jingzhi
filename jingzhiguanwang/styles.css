@@ -1,7 +1,12 @@
 /* 全局样式 */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Microsoft YaHei', sans-serif;
     color: #333;
+    padding-top: 70px; /* 为固定导航栏留出空间 */
 }
 
 /* 导航栏样式 */
@@ -206,4 +211,81 @@ body {
     .section-title {
         font-size: 1.8rem;
     }
+} 
+
+/* 添加滚动偏移量，防止内容被导航栏遮挡 */
+section {
+    scroll-margin-top: 80px;
+} 
+
+/* 关于我们样式 */
+.about-section {
+    padding: 80px 0;
+}
+
+.about-content {
+    padding: 20px;
+}
+
+.about-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #0066cc;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.about-features {
+    list-style: none;
+    padding: 0;
+}
+
+.about-features li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* 服务支持样式 */
+.service-section {
+    padding: 80px 0;
+}
+
+.service-card {
+    text-align: center;
+    padding: 40px 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    margin-bottom: 30px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card i {
+    font-size: 3rem;
+    color: #0066cc;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #666;
+    margin-bottom: 20px;
 } 
